@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Contact = () => {
   return (
-      <div className="max-w-7xl mx-auto mt-8 p-8">
+      <div id='contact' className="max-w-7xl mx-auto mt-8 p-8 h-screen">
         <h2 className="text-3xl font-bold mb-8">Contacto</h2>
         <div className="bg-white rounded-lg shadow-md p-6">
           <form>

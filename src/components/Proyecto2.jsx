@@ -1,8 +1,8 @@
-import proyecto1 from '../assets/proyecto1.jpg';
 import { useState } from 'react';
-import reactsvg from '../assets/reactsvg.png';
-import taildwindsvg from '../assets/taildwind.png';
-import vitesvg from '../assets/vite.svg';
+import proyecto1 from '../assets/proyecto2.png';
+import javascript from '../assets/javascript.svg';
+import php from '../assets/php.svg';
+import css from '../assets/css.svg';
 
 const Proyecto1 = () => {
 
@@ -35,12 +35,12 @@ const Proyecto1 = () => {
         <div
           style={buttonStyle}
         >
-          <h1 className='font-extrabold text-2xl'>Seguimiento de pacientes</h1>
-          <h2 className='mt-2'>React - Taildwind - Vite</h2>
+          <h1 className='font-extrabold text-2xl'>Ecommerce Tienda Natural</h1>
+          <h2 className='mt-2'>JavaScript - PHP - CSS </h2>
           <div className="flex justify-between h-8 m-6">
-            <img src={reactsvg} alt="react"/>
-            <img src={taildwindsvg} alt="taildiwndcss"/>
-            <img src={vitesvg} alt="vite"/>
+            <img src={javascript} alt="javascript"/>
+            <img src={php} alt="php"/>
+            <img src={css} alt="css"/>
           </div>
 
           <button
