@@ -3,8 +3,6 @@ import { motion, useAnimation} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Pfp from '../assets/pfp.png';
 import resume from '../resume.pdf';
-import Skills from './Skills';
-
 
 const About = () => {
   const controls = useAnimation();

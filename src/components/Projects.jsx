@@ -20,14 +20,14 @@ const Projects = () => {
   }, [controls, inView]);
 
   return (
-    <div id='projects' ref={ref} className="min-h-screen flex flex-col justify-center items-center bg-indigo-600 p-6">
+    <div id='projects' ref={ref} className="min-h-screen flex flex-col justify-center items-center bg-indigo-600 p-16">
       <motion.div
         className="title text-5xl font-semibold text-center text-white relative"
         initial={{ opacity: 0, x: -100 }}
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h2 className="p-12 mb-6 relative">
+        <h2 className="p-12 pt-16 mb-6 relative">
           Proyectos
         </h2>
       </motion.div>
@@ -37,7 +37,7 @@ const Projects = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-      <div className="min-h-min flex flex-col items-center pb-64 justify-center">
+      <div className="min-h-min flex flex-col items-center pt-10 pb-64 justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Proyecto1 />
           <Proyecto2 />
