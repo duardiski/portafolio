@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div id='projects' ref={ref} className="min-h-screen flex flex-col justify-center items-center bg-indigo-600 p-16">
       <motion.div
-        className="title text-5xl font-semibold text-center text-white relative"
+        className="title text-5xl text-center text-white relative"
         initial={{ opacity: 0, x: -100 }}
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -37,7 +37,7 @@ const Projects = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-      <div className="min-h-min flex flex-col items-center pt-10 pb-64 justify-center">
+      <div className="min-h-min flex flex-col items-center pt-10 justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Proyecto1 />
           <Proyecto2 />

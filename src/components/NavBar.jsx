@@ -34,7 +34,7 @@ const NavBar = () => {
     >
       <div className=" mx-auto text-white text-1xl">
         <div className="flex items-left justify-between">
-          <div className="space-x-7 text-xl">
+          <div className="space-x-7 text-lg">
             <button
               onClick={() => handleNavLinkClick('about')}
               className="hover:text-purple-500 focus:outline-none"

@@ -1,6 +1,7 @@
 import { useEffect} from 'react';
 import { motion, useAnimation} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Skills from './Skills';
 import Pfp from '../assets/pfp.png';
 import resume from '../resume.pdf';
 
@@ -19,15 +20,6 @@ const About = () => {
 
   return (
     <div id='about' ref={ref} className="bg-black min-h-screen flex flex-col justify-center items-center">
-      <motion.div
-        className="title text-5xl font-semibold mb-8 text-center text-white relative"
-        initial={{ opacity: 0, x: -100 }}
-        animate={controls}
-        transition={{ duration: 0.8, delay: 0.3 }}
-      >
-        <h2>Sobre mi</h2>
-      </motion.div>
-
       <div
       className="max-w-7xl mx-auto p-4 md:p-8 mb-10 flex flex-col md:flex-row justify-center md:justify-between items-center">
         <motion.div
@@ -50,7 +42,8 @@ const About = () => {
           animate={controls}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <p className="mb-4 text-lg font-extralight text-white text-left">
+          <h2 className='title text-4xl text-left text-white relative mb-10 mt-24'>Acerca de mi..</h2>
+          <p className="mb-4 text-xl font-extralight text-white text-justify">
             Hola! Soy{' '}
             <span className='text-indigo-500'>Analista de Sistemas</span> y entusiasta de la programación web que adora enfrentar desafíos con creatividad, trabajar colaborativamente en equipos y aprender continuamente. Con una pasión por el desarrollo web y la programación, estoy dedicado a encontrar soluciones innovadoras y mejorar las experiencias de los usuarios.
           </p>
@@ -73,6 +66,7 @@ const About = () => {
               </motion.button>
             </a>
           </div>
+
         </motion.div>
       </div>
     </div>

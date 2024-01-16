@@ -63,7 +63,7 @@ const Presentation = () => {
         transition={{ duration: 0.8 , delay: 0.3 }}
         className='text-center absolute top-0 left-0 w-full z-10'
       >
-        <h1 className='text-5xl text-white pt-10'>
+        <h1 className='text-5xl text-white pt-10 p-10'>
           Hola, mi nombre es <span className='text-indigo-500'>Federico Pereyra!</span>
         </h1>
         <h2 className=''></h2>
