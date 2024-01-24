@@ -7,9 +7,8 @@ const Presentation = () => {
   const [scrollY, setScrollY] = useState(0);
   const controls = useAnimation();
 
-
   const handleButtonClick = () => {
-    const targetElement = document.getElementById('navbar');
+    const targetElement = document.getElementById('about');
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: 'smooth',
@@ -43,7 +42,6 @@ const Presentation = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
       />
-
       <motion.img
         src={moonpng}
         alt="moon"
@@ -56,14 +54,13 @@ const Presentation = () => {
           transition: 'top 0.1s ease-out',
         }}
       />
-
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={controls}
         transition={{ duration: 0.8 , delay: 0.3 }}
         className='text-center absolute top-0 left-0 w-full z-10'
       >
-        <h1 className='text-5xl text-white pt-10 p-10'>
+        <h1 className='text-5xl text-white pt-10 p-8'>
           Hola, mi nombre es <span className='text-indigo-500'>Federico Pereyra!</span>
         </h1>
         <h2 className=''></h2>

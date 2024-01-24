@@ -2,8 +2,8 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-const CardEducation = ({ customLink }) => {
-  const linkTo = customLink || 'https://www.juan23.edu.ar/';
+const CardEducation1 = ({ customLink }) => {
+  const linkTo = customLink || 'https://www.juan23.edu.ar/carreras/tecnicatura-superior-en-analisis-de-sistemas/';
 
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -24,7 +24,7 @@ const CardEducation = ({ customLink }) => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={controls}
         transition={{ duration: 0.4 }}
-        className="bg-white rounded-lg shadow-md p-6 mt-6 cursor-pointer"
+        className="bg-white rounded-lg shadow-md md:p-8 p-10 mt-6 cursor-pointer"
       >
         <div className="flex items-center">
           <img
@@ -33,9 +33,9 @@ const CardEducation = ({ customLink }) => {
             className="w-1/4 mr-4 rounded-lg"
           />
           <div>
-            <h3 className="text-lg font-semibold mb-2">Título de la educación</h3>
+            <h3 className="text-lg font-semibold mb-2 uppercase">Instituto Superior Juan XXIII</h3>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, lectus sed interdum consequat.
+            Tecnicatura Superior en Análisis de Sistemas
             </p>
           </div>
         </div>
@@ -44,4 +44,4 @@ const CardEducation = ({ customLink }) => {
   );
 };
 
-export default CardEducation;
+export default CardEducation1;

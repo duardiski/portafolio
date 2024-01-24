@@ -4,9 +4,11 @@ import Proyecto3 from './Proyecto3';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect} from 'react';
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   const controls = useAnimation();
+  const gitHubLink = 'https://github.com/federico1506';
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -27,12 +29,12 @@ const Projects = () => {
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h2 className="p-12 pt-16 mb-6 relative">
+        <h2 className="p-8 pt-16 relative">
           Proyectos
         </h2>
       </motion.div>
       <motion.div
-        className="min-h-min flex flex-col items-center pb-64 justify-center"
+        className="min-h-min flex flex-col items-center pb-24 justify-center"
         initial={{ opacity: 0, x: 100 }}
         animate={controls}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -43,7 +45,12 @@ const Projects = () => {
           <Proyecto2 />
           <Proyecto3 />
         </div>
-      </div>
+      </div >
+      <motion.div className='mt-6 flex'>
+        <a href={gitHubLink} target="_blank" rel="noopener noreferrer" className='text-gray-900'>
+          <FaGithub size={100} />
+        </a>
+      </motion.div>
       </motion.div>
     </div>
   );
