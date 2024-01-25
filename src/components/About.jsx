@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div id='about' ref={ref} className="bg-black min-h-screen flex flex-col justify-center items-center">
       <div
-      className="max-w-7xl mx-auto p-4 md:p-8  flex flex-col md:flex-row justify-center md:justify-between items-center my-24">
+      className="max-w-7xl mx-auto p-4 md:p-8 flex flex-col md:flex-row justify-center md:justify-between items-center my-24 mt-">
         <motion.div
         id='boxAbout'
         className="w-full md:w-1/3 flex flex-col items-center h-auto md:h-80 p-4 md:items-start"
@@ -69,13 +69,13 @@ const About = () => {
       </div>
 
       <motion.div
-      className='grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-1 mb-20 mt-12' ref={ref}
+      className='grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-1 my-44' ref={ref}
       initial={{ opacity: 0 }}
       animate={controls}
       transition={{ duration: 0.8, delay: 0.9 }}
       >
         <div className='flex md:mb-16 items-center flex-col'>
-          <h1 className='title text-4xl text-center text-white mt-14 mb-6'>Habilidades</h1>
+          <h1 className='title text-4xl text-center text-white mb-6'>Habilidades</h1>
           <div className='p-4'>
               <Skills/>
           </div>
